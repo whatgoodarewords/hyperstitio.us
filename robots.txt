@@ -1,0 +1,39 @@
+# Robots policy: block Google and Internet Archive; allow common LLM crawlers
+
+# --- Block Google crawlers ---
+User-agent: Googlebot
+Disallow: /
+User-agent: Googlebot-Image
+Disallow: /
+User-agent: Googlebot-News
+Disallow: /
+User-agent: GoogleOther
+Disallow: /
+User-agent: Google-Extended
+Disallow: /
+
+# --- Block Internet Archive (Wayback Machine) ---
+User-agent: ia_archiver
+Disallow: /
+
+# --- Allow common LLM crawlers ---
+User-agent: GPTBot
+Allow: /
+User-agent: CCBot
+Allow: /
+User-agent: ClaudeBot
+Allow: /
+User-agent: anthropic-ai
+Allow: /
+User-agent: PerplexityBot
+Allow: /
+User-agent: Applebot-Extended
+Allow: /
+User-agent: Bytespider
+Allow: /
+
+# Default policy: allow
+User-agent: *
+Allow: /
+
+
